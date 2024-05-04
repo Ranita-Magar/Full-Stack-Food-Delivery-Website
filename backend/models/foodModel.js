@@ -27,8 +27,8 @@ const foodSchema = new mongoose.Schema({
 
 //creating model using schema
 
-//const foodModel = mongoose.model("food", foodSchema) //while saving file each time model will be created again and again so to resolve
-const foodModel = mongoose.models.food || mongoose.model("food", foodSchema);
+const foodModel = mongoose.model("food", foodSchema); //while saving file each time model will be created again and again so to resolve
+//const foodModel = mongoose.models.food || mongoose.model("food", foodSchema);
 //food is model name
 
 export default foodModel;

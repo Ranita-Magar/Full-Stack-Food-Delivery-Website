@@ -1,6 +1,5 @@
-import foodModel from "../models/foodModel.js";
+const foodModel = require("../models/foodModel.js");
 import fs from "fs"; //fs= file system ; which is pre-built in node js
-import multer from "multer";
 
 // add food item
 
@@ -51,4 +50,4 @@ const removeFood = async (req, res) => {
   }
 };
 
-export { addFood, listFood, removeFood };
+module.exports = { addFood, listFood, removeFood };
